@@ -15,6 +15,14 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Roboto:300,400,500,700:cyrillic']
+        }
+      });
+    </script>
   </head>
   <body>
     <!--[if IE]>
@@ -23,7 +31,7 @@
     <div class="mk-container">
       <header class="header">
         <div class="header-topbar">
-          <div class="container pr-0 pl-0">
+          <div class="container">
             <ul class="header-topbar__lang">
               <li><a href="">ita</a></li>
               <li><a href="" class="current">eng</a></li>
@@ -40,16 +48,16 @@
         </div>
         <!-- /.header-topbar -->
         <div class="header-dt">
-          <div class="container pr-0 pl-0">
+          <div class="container">
             <div class="row">
-              <div class="col-lg-9">
-                <div class="header-dt__logo"><img src="images/logo-main.png" alt=""></div>
+              <div class="col-lg-9 text-center">
+                <a href="." class="header-dt__logo"><img src="images/logo-main.png" alt=""></a>
               </div>
               <!-- /.col-lg-9 -->
               <div class="col-lg-3">
                 <ul class="header-dt__actions">
-                  <li><a href="" class="search">поиск</a></li>
-                  <li><a href="" class="login">войти</a></li>
+                  <li><a href="" class="search">поиск <span></span></a></li>
+                  <li><a href="" class="login">войти <span></span></a></li>
                 </ul>
                 <!-- /.header-dt__actions -->
               </div>
@@ -61,7 +69,7 @@
         </div>
         <!-- /.header-dt -->
         <div class="menu-dt">
-          <div class="container pl-0 pr-0">
+          <div class="container">
             <div class="row">
               <ul>
                 <li><a href="">Главная</a></li>
@@ -73,18 +81,18 @@
             <!-- /.row -->
           </div>
           <!-- /.container -->
+        </div>
+        <!-- /.menu-dt -->
+        <div class="header-breadcrumbs">
           <div class="container">
             <div class="row">
-              <div class="header-breadcrumbs">
-                <a href="">Главная</a><a href="" class="current ">Срочные новости</a>
-              </div>
-              <!-- /.header-breadcrumbs -->
+              <a href="">Главная</a><a href="" class="current ">Срочные новости</a>
             </div>
             <!-- /.row -->
           </div>
           <!-- /.container -->
         </div>
-        <!-- /.menu-dt -->
+        <!-- /.header-breadcrumbs -->
         <div class="header-mob">
           <div class="container">
             <div class="header-mob__logo">
@@ -214,32 +222,32 @@
                 <a href="" class="mk-button">Купить UpBooster</a>
               </section>
               <!-- /.post -->
-              <section class="related">
+              <section class="section related">
                 <h2 class="section__title">Реальные истории</h2>
                 <ul class="related-news">
                   <li class="related-news__article">
                     <div class="image" style="background-image: url(images/related1.gif);"></div>
-                    <p class="excerpt">Сенсационный способ увеличения груди...</p>
-                    <a href="" class="link">Подробнее..</a>
+                    <div><p class="excerpt">Сенсационный способ увеличения груди...</p>
+                    <a href="" class="link">Подробнее...</a></div>
                   </li>
                   <!-- /.related-news__article -->
                   <li class="related-news__article">
                     <div class="image" style="background-image: url(images/related2.gif);"></div>
-                    <p class="excerpt">Грудь девушки увеличилась на 2 размера за 3 дня!</p>
-                    <a href="" class="link">Подробнее..</a>
+                    <div><p class="excerpt">Грудь девушки увеличилась на 2 размера за 3 дня!</p>
+                    <a href="" class="link">Подробнее...</a></div>
                   </li>
                   <!-- /.related-news__article -->
                 </ul>
                 <!-- /.related-news -->
               </section>
               <!-- /.related -->
-              <section class="leave-comment">
+              <section class="section leave-comment">
                 <h2 class="section__title">Комментарии</h2>
                 <div class="leave-comment__form">
                   <form action="" class="form">
                     <input type="text" name="name" id="name" placeholder="Ваше имя">
                     <textarea name="comment" id="comment" placeholder="Текст комментария"></textarea>
-                    <button class="submitToNowhere">Отправить</button>
+                    <button class="submitToNowhere mk-button">Отправить</button>
                   </form>
                 </div>
                 <!-- /.leave-comment__form -->
